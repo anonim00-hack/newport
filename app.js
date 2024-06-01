@@ -8,6 +8,12 @@ const repeat = document.querySelector('.rep-button');
 const iframe1 = document.querySelector('.iframe1');
 const iframe2 = document.querySelector('.iframe2');
 
+const menuBtn = document.querySelector('.menu');
+
+const buttonBox = document.querySelector('.buttons');
+const bright = document.querySelector('.bright');
+const LnkButtons = document.querySelectorAll('.lnk-buttons');
+
 const gmailName = document.querySelector('.gmail-name');
 const gmailPass = document.querySelector('.gmail-pass');
 
@@ -15,6 +21,22 @@ const alertBox = document.querySelector('.alert-box');
 const header = document.querySelector('header');
 const body2 = document.querySelector('.body');
 
+menuBtn.addEventListener('click', () => {
+    buttonBox.style.display = 'flex';
+    bright.classList.toggle('brightOn');
+});
+
+bright.addEventListener('click', () => {
+    buttonBox.style.display = 'none';
+    bright.classList.toggle('brightOn');
+});
+
+LnkButtons.forEach(LnkButton => {
+    LnkButton.addEventListener('click', () => {
+        buttonBox.style.display = 'none';
+        bright.classList.toggle('brightOn');
+    })
+})
 
 setInterval(() => {
     const addBox = document.querySelector('.adds');
