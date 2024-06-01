@@ -26,12 +26,6 @@ body{
     box-shadow: 0px 15px 20px gray;
 }
 
-.inputs{
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 170px;
-}
-
 .inps{
     margin-bottom: 40px;
     border: none;
@@ -42,19 +36,7 @@ body{
     width: 100%;
 }
 
-.gmail{
-    position: relative;
-}
-
 .inp-name {
-}
-
-.con-gmail{
-    position: absolute;
-    right: 0;
-    top: 10%;
-    font-family: sans-serif;
-    color: blue;
 }
 
 .inp-pass {
